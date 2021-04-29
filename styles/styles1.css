@@ -1,0 +1,101 @@
+html {
+ 	width: auto;
+ 	-webkit-print-color-adjust: exact; 
+ 	background-color: #C1DCDD;
+  	font-family: 'Noto Sans TC', sans-serif;
+  	margin: 0 auto;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+}
+
+textarea {  -webkit-appearance: none;}   
+
+
+#top{
+	position: relative;
+	width: auto;
+	height: 120px;
+	background-color: #006F72;
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+}
+
+#main {
+	position: relative;
+	width: 90%; /*310px 80%*/
+	max-width: 700px;
+	margin: 20px auto;
+	background-color: #FFFFFF;
+	border-radius: 20px 20px 20px 20px;
+	padding: 20px 1% 20px 1%; 
+}
+
+#logo {
+	position: relative;
+	max-width: 200px;
+	display: block;
+  	margin: 30px auto;
+}
+
+input {
+	outline-style: none;
+    border: 0; 
+    border-radius: 3px;
+    background-color: #E4E4E4;
+    font-size: 18px;
+    padding: 2px 2px;
+}
+
+h3 {
+	position: relative;
+	font-size: 25px;
+	padding: 0 auto;
+	letter-spacing: 1px;
+	margin: 30px auto 10px auto;
+	text-align:center;
+}
+
+h4 {
+	position: relative;
+	font-size: 18px;
+	font-weight:normal;
+	padding: 0 auto;
+	letter-spacing: 1px;
+	margin: 20px auto;
+	text-align:center;
+}
+
+h6 {
+	position: relative;
+	font-size: 25px;
+	margin: 20px 0 5px 0;
+	letter-spacing: 1px;
+	text-align:center;
+}
+
+body {
+ 	margin: 0 auto;
+ 	letter-spacing: 1px;
+}
+
+p, ul {
+	font-size: 18px;
+  	text-align: left;
+  	line-height: 2;
+  	letter-spacing: 1px;
+  	padding-right: 10px;
+}
+
+.btn {
+	background: #006F72;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 3px 10px;
+	cursor: pointer;
+	margin: 10px 5px 20px 80%;
+	position: relative;
+	text-align: center;
+}

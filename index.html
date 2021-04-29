@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="images/icon.png">
+		<meta charset="utf-8">
+		<title>實名制登記</title>
+		<link rel="stylesheet" href="styles/styles1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	</head>
+	<body style="text-align: left">
+		<script src="scripts/main.js"></script>
+
+		<div id="top">
+			<div id="main">
+				<img src="images/logo-2.png" alt="logo" id="logo">
+				<form name=data method = "POST" action="PhpEmail/test.php" accept-charset="utf-8">
+
+				<h6>基本資料</h6>
+				<ul>
+					<li>姓名<br><input type="text" name="name" style="width: 90%"><br></li>
+					<li>手機<br><input type="text" name="phone" style="width: 90%"><br></li>
+					<li>電子郵件<br><input type="text" name="email" style="width: 90%"><br></li>
+					<li>所屬單位<br><input type="text" name="department" style="width: 90%"><br></li>
+					<li>受訪單位<br><input type="text" name="reception" style="width: 90%"><br></li>
+					<li>接待窗口/聯絡人<br><input type='text' name="contact_person" style="width: 90%"><br></li>
+				</ul>
+				
+				<h6>出入境旅遊史</h6> 
+				<ul>                                                            
+					<li>近一個月內有無出國？<br></li>
+					<input type="radio" name="abroad" id="a_1" value="1" onChange=Javascript:changelist1();>是<br>
+					<div id=abroad_q></div>
+					<input type="radio" name="abroad" id="a_0" value="0" onChange=Javascript:changelist1();>否<br>
+				</ul>
+					
+				<h6>相關症狀</h6>
+				<ul>
+					<li>最近 14 天內是否出現以下症狀？<br> (複選) <br></li>
+					<input type="checkbox" name="symptom[]" id="s_1" value="1"/>發燒(額溫 ≧37.5°C)<br>
+					<input type="checkbox" name="symptom[]" id="s_2" value="2"/>咳嗽<br>
+					<input type="checkbox" name="symptom[]" id="s_3" value="3"/>喉嚨痛<br>
+					<input type="checkbox" name="symptom[]" id="s_4" value="4"/>呼吸急促、呼吸困難<br>
+					<input type="checkbox" name="symptom[]" id="s_5" value="5"/>流鼻水<br>
+					<input type="checkbox" name="symptom[]" id="s_6" value="6"/>肌肉或關節酸痛<br>
+					<input type="checkbox" name="symptom[]" id="s_7" value="7"/>四肢無力<br>
+					<input type="checkbox" name="symptom[]" id="s_8" value="8"/>其他 
+					<input type="text" name="other"/><br>
+					<input type="checkbox" name="symptom[]" id="s_0" value="0"/>無<br>
+				</ul>
+
+				<h6>接觸史</h6>
+				<ul>
+					<li>您身邊是否有人出國？<br></li>
+					<input type="radio" name="contact_q1" id="cq1_1" value="1" onChange=Javascript:changelist2();>是<br>
+					<div id=contact_q></div>
+					<input type="radio" name="contact_q1" id="cq1_0" value="0" onChange=Javascript:changelist2();>否<br>
+
+
+					<li>您身邊是否有其他 2 人以上出現類流感症狀？<br></li>
+					<input type="radio" name="contact_q2" id="cq2_1" value="1">是<br>
+					<input type="radio" name="contact_q2" id="cq2_0" value="0">否<br>
+					
+
+					<li>您或您家屬是否曾與感染「新冠肺炎」病患有接觸？<br></li>
+					<input type="radio" name="contact_q3" id="cq3_1" value="1">是<br>
+					<input type="radio" name="contact_q3" id="cq3_0" value="0">否<br>
+					</li>
+
+					<li>您是否為衛生主管機關列管之「新冠肺炎」居家隔離個案？<br></li>
+					<input type="radio" name="contact_q4" id="cq4_1" value="1">是<br>
+					<input type="radio" name="contact_q4" id="cq4_0" value="0">否<br>
+				</ul>	
+				</form>
+				<input class="btn" type="button" value="送出" onClick="check1()" />
+			</div>
+			<br>
+		</div>
+	</body>
+</html>
