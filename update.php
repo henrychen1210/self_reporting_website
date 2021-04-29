@@ -1,13 +1,11 @@
 <?php
-  //更新資料庫
   header("Content-Type:text/html; charset=utf-8");
-  //建立連線：
-  $link = mysql_pconnect("192.168.2.39", "root", "estinet"); //$link宣告連線，mysql_pconnet("主機名稱","資料庫帳號","資料庫密碼");
-  //選擇資料庫：
-  mysql_query("SET NAMES 'UTF8'");
-  mysql_select_db("EstiNet_test") or die("無法選擇資料庫"); // 選擇資料庫：mysql_select_db("資料庫名稱") or die ("失敗顯示字");
 
-  //二、執行SQL語法
+  $link = mysql_pconnect("", "", "");
+
+  mysql_query("SET NAMES 'UTF8'");
+  mysql_select_db("EstiNet_test") or die("無法選擇資料庫"); 
+
 
   $id = $_POST['userid'];
 
